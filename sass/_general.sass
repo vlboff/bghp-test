@@ -1,3 +1,12 @@
+h2
+    position: absolute
+    font-family: Oswald
+    font-weight: 700
+    font-size: 30px
+    line-height: 40px
+    color: #310018
+    z-index: 10
+    
 header
     background: $main-color
     nav
@@ -27,7 +36,7 @@ header
             &_list
                 height: 90px
                 border: none
-                padding: 37px 6px 31px 7px
+                padding: 37px 12px 31px 13px
                 font-family: Oswald
                 font-weight: 300
                 font-size: 15px
@@ -92,15 +101,16 @@ header
             cursor: pointer
 .main
     min-height: 560px
+    background: #FCFCF7
     &_block
         position: relative
         background: #FCFCF7
+        min-height: 560px
         h1
             position: absolute
             left: 140px
             top: 104px
             font-family: Oswald
-            font-style: normal
             font-weight: 700
             font-size: 50px
             line-height: 60px
@@ -115,7 +125,6 @@ header
             background: $main-color
             border: none
             font-family: Open Sans
-            font-style: normal
             font-weight: 700
             font-size: 15px
             line-height: 20px
@@ -126,6 +135,8 @@ header
             color: #FFFFFF
         &_img
             position: absolute
+            width: 740px
+            height: 560px
             left: 460px
             top: 0px
         &_rect
@@ -136,6 +147,57 @@ header
             top: 240px
             background: $accent
             border-radius: 19.6317px 54.5326px 20.7224px 8.72521px
+
+.about
+    min-height: 510px
+    background: #E0E6E9
+    .about_block
+        position: relative
+        background: #E0E6E9
+        padding: 90px 140px 100px 140px
+        &_rect
+            position: absolute
+            width: 242px
+            height: 40px
+            left: 193px
+            top: 90px
+            background: $accent
+            border-radius: 18px 50px 19px 8px
+        &_dscr
+            margin-top: 60px
+            font-family: Open Sans
+            font-weight: 500
+            font-size: 20px
+            line-height: 30px
+            color: #000000
+        .fact
+            margin-top: 40px
+            width: 200px
+            height: 160px
+            &_n
+                font-family: Oswald
+                font-weight: 400
+                font-size: 90px
+                line-height: 60px
+                text-align: center
+                color: $main-color
+            &_dscr
+                margin-top: 30px
+                text-align: center
+                @include dscr
+
+.details
+    min-height: 710px
+    background: #FCFCF7
+    &_block
+        display: flex
+        justify-content: flex-end
+        min-height: 710px
+        padding: 80px 140px 320px 140px
+        background: url('../img/second_bg.png') center center/cover no-repeat
+
+
+    
 
 
 
