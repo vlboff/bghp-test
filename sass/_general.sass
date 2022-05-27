@@ -1,12 +1,13 @@
 h2
-    position: absolute
     font-family: Oswald
     font-weight: 700
     font-size: 30px
     line-height: 40px
     color: #310018
-    z-index: 10
-    
+
+.container
+    max-width: 1224px
+
 header
     background: $main-color
     nav
@@ -155,6 +156,9 @@ header
         position: relative
         background: #E0E6E9
         padding: 90px 140px 100px 140px
+        &_h2
+            position: absolute
+            z-index: 10
         &_rect
             position: absolute
             width: 242px
@@ -166,7 +170,7 @@ header
         &_dscr
             margin-top: 60px
             font-family: Open Sans
-            font-weight: 500
+            font-weight: 400
             font-size: 20px
             line-height: 30px
             color: #000000
@@ -190,11 +194,47 @@ header
     min-height: 710px
     background: #FCFCF7
     &_block
+        position: relative
         display: flex
-        justify-content: flex-end
+        flex-direction: column
+        align-items: flex-end
         min-height: 710px
         padding: 80px 140px 320px 140px
         background: url('../img/second_bg.png') center center/cover no-repeat
+        &_h2
+            position: absolute
+            z-index: 10
+        &_rect
+            position: absolute
+            width: 384px
+            height: 40px
+            left: 680px
+            top: 84px
+            background: $accent
+            border-radius: 18px 50px 19px 8px
+        &_dscr
+            text-align: right
+            margin: 45px 0 0 472px
+            @include dscr
+            .br
+                height: 10px
+        &_btn
+            margin-top: 40px
+            border: none
+            width: 280px
+            height: 40px
+            background: $main-color
+            font-family: Open Sans
+            font-style: normal
+            font-weight: 600
+            font-size: 12px
+            text-align: center
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #FFFFFF
+
+
+
 
 
     
